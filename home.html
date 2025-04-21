@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style scoped>
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+        }
+
+        .window {
+            background-color: #eeeeee;
+            border-radius: 10px;
+            padding: 10px 30px;
+
+            width: max-content;
+            height: fit-content;
+
+            display: flex;
+            border: 2px solid #A5A5A5;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .window .group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 7px;
+        }
+
+
+        button {
+            border-radius: 6px;
+            border: 2px solid #757575;
+            background-color: transparent;
+            cursor: pointer;
+
+            color: #757575;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 5px 9px;
+        }
+
+        .green {
+            border: 2px solid green;
+            color: green;
+        }
+
+        .red {
+            border: 2px solid red;
+            color: red;
+        }
+
+        button:hover {
+            color: #757575;
+            border: 2px solid #757575;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="window">
+        <h2>Système de Surveillance</h2>
+
+        <div class="group">
+            <p>Température:</p>
+            <p>25°C</p>
+        </div>
+
+        <div class="group">
+            <p>État de la trappe:</p>
+            <p>Ouverte / Fermée</p>
+        </div>
+
+        <div class="group">
+            <button>Basculer Mode Test</button>
+        </div>
+
+        <div class="group" style="font-weight: bold; color:blue;">
+            <p>Mode Test:</p>
+            <p>Activé / Désactivé</p>
+        </div>
+
+        <div class="group">
+            <p>Température:</p>
+            <button class="green">+</button>
+            <button class="red">-</button>
+        </div>
+
+        <div class="group">
+            <p>Trappe:</p>
+            <button class="green">Ouvrir</button>
+            <button class="red">Fermer</button>
+        </div>
+
+        <div class="group">
+            <p>Alarme:</p>
+            <button class="green">Activer</button>
+            <button class="red">Arrêter</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
